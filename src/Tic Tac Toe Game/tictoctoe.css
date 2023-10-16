@@ -16,9 +16,10 @@
 
 span{
     position: absolute;
-    top: 25px;
-    left: 30px;
-    font-size: 40px;
+    top: 20px;
+    left: 25px;
+    font-size: 45px;
+    color: black;
 }
 
 .container{
