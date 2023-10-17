@@ -1,7 +1,7 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function PlayersPage() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
   return (
     <div>
@@ -9,12 +9,12 @@ export function PlayersPage() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          // navigate("/game", {
-          //   state: {
-          //     player1: e.target.children[0].value,
-          //     player2: e.target.children[1].value,
-          //   },
-          // });
+          navigate("/game", {
+            state: {
+              player1: e.target.children[0].value,
+              player2: e.target.children[1].value,
+            },
+          });
         }}
       >
         <input type="text" placeholder="Player 1" />
