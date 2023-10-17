@@ -79,6 +79,8 @@ span{
     margin: 3px;
     font-size: 20px;
     text-align: center;
+    background-color: transparent;
+    color: teal;
 }
 
 .form-container{
