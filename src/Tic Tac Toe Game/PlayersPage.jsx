@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-
+import "./tictoctoe.css"
 export function PlayersPage() {
     const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="form-container">
       <div>Fill the players details :</div>
       <form
         onSubmit={(e) => {
@@ -16,10 +16,11 @@ export function PlayersPage() {
             },
           });
         }}
+        className="form"
       >
-        <input type="text" placeholder="Player 1" />
-        <input type="text" placeholder="Player 2" />
-        <button>Start Game</button>
+        <input className="form-input" type="text" placeholder="Player 1" />
+        <input className="form-input" type="text" placeholder="Player 2" />
+        <button className="form-btn">Start Game</button>
       </form>
     </div>
   );
