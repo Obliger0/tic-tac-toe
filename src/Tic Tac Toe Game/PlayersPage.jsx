@@ -18,8 +18,8 @@ export function PlayersPage() {
         }}
         className="form"
       >
-        <input className="form-input" type="text" placeholder="Player 1" />
-        <input className="form-input" type="text" placeholder="Player 2" />
+        <input className="form-input" type="text" placeholder="Player 1" required/>
+        <input className="form-input" type="text" placeholder="Player 2" required/>
         <button className="form-btn">Start Game</button>
       </form>
     </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import "./tictoctoe.css";
 
@@ -12,7 +12,7 @@ export function TicTac() {
   const [value, setValue] = useState("⭕");
   // const [players, setPlayers] = useState({});
   const [result, setResult] = useState({player: "", status:false});
-  // const { state } = useLocation();
+  const { state } = useLocation();
   
   return (
     <div className="container">
@@ -26,7 +26,7 @@ export function TicTac() {
           <div className="result">Player "{result.player}" Won</div>
         </div>
       )}
-      {/* <div className="players">Player 1 : {state.player1}</div> */}
+      <div className="players">{state.player1}</div>
       <div className={`game-container ${result.player && "blur-game"}`}>
         {arr.map((arr2, i) => {
           return (
@@ -50,7 +50,7 @@ export function TicTac() {
           );
         })}
       </div>
-      {/* <div className="players">Player 2 : {state.player2}</div> */}
+      <div className="players">{state.player2}</div>
     </div>
   );
 }
